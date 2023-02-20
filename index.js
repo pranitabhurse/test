@@ -26,7 +26,7 @@ app.use('/api', require('./Src/ApiForm/Router'));
 
 
 app.get('/',function(req , res){
-    res.send('my node js api with ms-sql')
+    res.send('my node js api with ms-sql new')
 
 })
 var server = app.listen(8000, function () {
