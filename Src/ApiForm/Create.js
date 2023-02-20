@@ -111,7 +111,7 @@ async function loginUser(req, res) {
 async function sponserName(req, res) {
     let pool = await sql.connect(config);
     const request = pool.request();
-    let productsUserName = await pool.request().query(`Select * From Entry where username='${req.body.username}'`);
+    let productsUserName = await pool.request().query(`Select * From Entry where Spon_Code='${req.body.Spon_Code}'`);
     // Select * From Entry where Email ='support@tron10club' and username='tron10club'
     const datalength = productsUserName.rowsAffected;
     // console.log(productsUserName);
